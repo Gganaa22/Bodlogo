@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <children>
+      <Label layoutX="22.0" layoutY="14.0" text="RGB7011 - Минут секунд&#10;Өгөгдсөн секундыг минут секунд болго.&#10;Input&#10;Секунд Int тоон утгаар өгөгдөнө.&#10;Output&#10;Минут секундыг зайгаар тусгаарлан хэвлэ.&#10;" textFill="#11cc6e">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="175.0" text="Секундээ оруулна уу :" />
+      <TextField fx:id="txtSecond" layoutX="149.0" layoutY="171.0" prefHeight="26.0" prefWidth="119.0" />
+      <Label layoutX="25.0" layoutY="250.0" text="Таны оруулсан секунд хэдэн минут болох:" />
+      <Button layoutX="305.0" layoutY="211.0" mnemonicParsing="false" onAction="#onClickBodoh" text="Бодох" />
+      <Label layoutX="300.0" layoutY="157.0" prefHeight="54.0" prefWidth="259.0" text="Оруулсан секундыг минут руу шилжүүлэх бол&#10;&quot;Бодох&quot; товчийг дар" />
+      <TextField fx:id="txtMinute" layoutX="26.0" layoutY="302.0" />
+      <TextField fx:id="txtSecond2" layoutX="26.0" layoutY="353.0" />
+      <Label layoutX="25.0" layoutY="279.0" text="Минут:" />
+      <Label layoutX="25.0" layoutY="333.0" text="Cекунд:" />
+   </children>
+</AnchorPane>

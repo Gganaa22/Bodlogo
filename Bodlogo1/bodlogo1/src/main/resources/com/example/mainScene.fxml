@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <children>
+      <Label layoutX="32.0" layoutY="20.0" prefHeight="122.0" prefWidth="615.0" text="RGB7003 - Тэгш өнцөгт&#10;Өгөгдсөн тэгш өнцөгтийн талбай ба периметрийг ол.&#10;Input&#10;Тэгш өнцөгтийн урт ба өргөн нь бүхэл тоон утгаар нэг мөрөнд зайгаар тусгаарлагдан өгөгдөнө.&#10;Output&#10;Талбай ба периметр зайгаар тусгаарлагдан нэг мөрөнд хэвлэгдэнэ." textFill="#0b4cff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="165.0" text="Уртыг оруулна уу:" />
+      <Label layoutX="32.0" layoutY="237.0" text="Талбай:" />
+      <TextField fx:id="txtUrt" layoutX="130.0" layoutY="161.0" prefHeight="26.0" prefWidth="107.0" />
+      <TextField fx:id="txtTalbai" layoutX="81.0" layoutY="232.0" prefHeight="26.0" prefWidth="124.0" />
+      <Button layoutX="32.0" layoutY="200.0" mnemonicParsing="false" onAction="#onClickBodoh" text="Бодох" />
+      <TextField fx:id="txtUrgun" layoutX="374.0" layoutY="161.0" prefHeight="26.0" prefWidth="124.0" />
+      <Label layoutX="250.0" layoutY="165.0" prefHeight="18.0" prefWidth="124.0" text="Өргөнийг оруулна уу:" />
+      <Label layoutX="32.0" layoutY="269.0" text="Периметр:" />
+      <TextField fx:id="txtPerimetr" layoutX="97.0" layoutY="264.0" prefHeight="26.0" prefWidth="107.0" />
+   </children>
+</AnchorPane>
