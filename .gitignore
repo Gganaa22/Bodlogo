@@ -1,0 +1,21 @@
+# Metals
+.metals/
+.bloop/
+project/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Database
+*.mv.db
+
+# Build folders
+target/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db

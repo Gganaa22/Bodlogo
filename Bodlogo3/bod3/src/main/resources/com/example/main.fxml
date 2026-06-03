@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="txtNiinUtga" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="632.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="178.0" prefWidth="602.0" text="RGB7022 - Арифметик прогрессын N-р гишүүн&#10;Бүхэл тоон арифметик прогрессын p дэх гишүүн ap болон q дэх гишүүн  aq өгөгдсөн бол N &#10;дүгээр гишүүнийг ол.   &#10;&#9;Input:&#10;Эхний мөрөнд  p, ap 2 тоо зайгаар тусгаарлагдан өгөгдөнө.&#10;Хоёр дахь мөрөнд q, aq тоо зайгаар тусгаарлагдан өгөгдөнө.&#10;Гурав дахь мөрөнд бүхэл тоо N өгөгдөнө.&#10;&#9;Output:&#10;Арифметик прогрессын N дүгээр гишүүн. &#10;" textFill="#0035f4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="235.0" text="Бодолт:">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="269.0" text="Эхний мөрний утгыг оруулна уу:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="348.0" text="Хоёр дах мөрний утгыг оруулна уу:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutY="192.0" prefHeight="18.0" prefWidth="649.0" text="---------------------------------------------------------------------------------" textFill="#ff0c0c">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtP" layoutX="24.0" layoutY="286.0" prefHeight="26.0" prefWidth="76.0" />
+      <TextField fx:id="txtQ" layoutX="30.0" layoutY="370.0" prefHeight="26.0" prefWidth="76.0" />
+      <Label layoutX="14.0" layoutY="290.0" text="P:" />
+      <Label layoutX="13.0" layoutY="374.0" text="q:" />
+      <Label layoutX="112.0" layoutY="289.0" prefHeight="18.0" prefWidth="159.0" text="аp буюу а ын p дэх элемэнт:" />
+      <Label layoutX="122.0" layoutY="374.0" prefHeight="18.0" prefWidth="226.0" text="aq​ буюу а ын q дугаар элемэнтийн утга:" />
+      <TextField fx:id="txt_ap" layoutX="274.0" layoutY="286.0" prefHeight="26.0" prefWidth="91.0" />
+      <TextField fx:id="txt_aq" layoutX="349.0" layoutY="370.0" prefHeight="26.0" prefWidth="91.0" />
+      <Label layoutX="10.0" layoutY="412.0" text="Гурав дах мөрний утгыг оруулна уу:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="10.0" layoutY="440.0" text="N тоог оруулна уу:" />
+      <TextField fx:id="txtN" layoutX="112.0" layoutY="435.0" prefHeight="26.0" prefWidth="76.0" />
+      <Button layoutX="322.0" layoutY="480.0" mnemonicParsing="false" onAction="#onClickBodoh" style="-fx-background-color: #00ffff; -fx-border-color: black;" text="Бодох">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="10.0" layoutY="484.0" text="N-р гишүүнийг олох бол бодох товч дээр дарна уу:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="522.0" text="N-р гишүүний утга :" />
+      <TextField fx:id="txtUtga" layoutX="122.0" layoutY="517.0" prefHeight="26.0" prefWidth="76.0" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
