@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Udirdlaga">
+   <children>
+      <Label alignment="CENTER" prefHeight="128.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #008080, #00ffff);" text="RGB7107 - Тэгш тоонуудын нийлбэр&#10;Өгөгдсөн 3 тоон дахь тэгш тоонуудын нийлбэрийг ол. Ядаж 1 тэгш тоо бий. &#10;Input:&#10;Нэг мөрөнд Int төрлийн 3 тоо зайгаар тусгаарлагдан өгөгдөнө.&#10;Output:&#10;Нийлбэр">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="259.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="16.0" layoutY="8.0" prefHeight="27.0" prefWidth="136.0" style="-fx-background-color: linear-gradient(to bottom right, #008080, #00ffff); -fx-background-radius: 10;" text="Тоонуудыг оруулна уу:">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="16.0" layoutY="48.0" text="Эхний тоо:" />
+            <Label layoutX="16.0" layoutY="74.0" text="Хоёр дах тоо:" />
+            <Label layoutX="16.0" layoutY="101.0" text="Гурав дах тоо:" />
+            <TextField fx:id="txtTooNeg" layoutX="95.0" layoutY="44.0" prefHeight="26.0" prefWidth="143.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="txtTooHoyr" layoutX="95.0" layoutY="70.0" prefHeight="26.0" prefWidth="143.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="txtTooGurav" layoutX="95.0" layoutY="97.0" prefHeight="26.0" prefWidth="143.0" style="-fx-background-radius: 10;" />
+            <RadioButton fx:id="radiobtnTegshToo" layoutX="290.0" layoutY="49.0" mnemonicParsing="false" onAction="#onClickTegshToonuud" style="-fx-border-color: linear-gradient(to bottom right, #008080, #00ffff); -fx-border-radius: 10;" text="Тэгш тоонуудыг харах" />
+            <TextField fx:id="txtTegshToonuud" layoutX="287.0" layoutY="79.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-radius: 10;" />
+            <Label layoutX="16.0" layoutY="139.0" text="Тэгш тоонуудын нийлбэрийг харах :" />
+            <Button fx:id="btnBodoh" layoutX="14.0" layoutY="168.0" mnemonicParsing="false" onAction="#onClickBodoh" style="-fx-background-color: linear-gradient(to bottom right, #008080, #00ffff);" text="Бодох" />
+            <Label layoutX="14.0" layoutY="207.0" text="Тэгш тоонуудын нийлбэр:" />
+            <TextField fx:id="txtNiilber" layoutX="164.0" layoutY="203.0" style="-fx-background-radius: 10;" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
